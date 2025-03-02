@@ -66,35 +66,98 @@ font-weight: 600;
     background-image:linear-gradient(45deg,#3f0028,#582300) ;
     transform: scale(1.05);
     transition: 0.4s;
-}
-@media(max-width:768px){
-   .services{
-    align-items: start;
-    gap: 70px;
-    margin: 20px 150px;
-   } 
-   .services-title h1{
-    padding: 0;
-    font-size: 30px;
-   }
-   .services-title img{
-    width: 130px;
-    margin-right: -20px;
-   }
-   .services-format{
-    gap: 20px;
-    padding: 32px;
-   }
-   .services-format h2{
-    font-size: 28px;
-   }
-   .services-format p{
-    font-size: 18px;
-    line-height: 32px;
-    max-width: 300px;
-   }
-   .services-container{
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-   }
-}
+}@media (max-width: 1200px) {
+    .services-container {
+       grid-template-columns: repeat(2, 1fr);
+       gap: 30px;
+    }
+    .services-title h1 {
+       font-size: 60px;
+    }
+ }
+ 
+ /* Tablets */
+ @media (max-width: 992px) {
+    .services {
+       gap: 60px;
+       margin: 60px 5%;
+    }
+    .services-format {
+       padding: 40px;
+    }
+    .services-format h2 {
+       font-size: 32px;
+    }
+ }
+ 
+ /* Small tablets and large phones */
+ @media (max-width: 768px) {
+    .services {
+       align-items: center;
+       gap: 50px;
+       margin: 40px 5%;
+    }
+    .services-title h1 {
+       padding: 0;
+       font-size: 40px;
+    }
+    .services-title img {
+       width: 130px;
+       max-width: 40%;
+    }
+    .services-format {
+       gap: 15px;
+       padding: 30px;
+    }
+    .services-format h3 {
+       font-size: 24px;
+    }
+    .services-format h2 {
+       font-size: 28px;
+    }
+    .services-format p {
+       font-size: 14px;
+       line-height: 26px;
+    }
+ }
+ 
+ /* Mobile phones */
+ @media (max-width: 576px) {
+    .services-container {
+       grid-template-columns: 1fr;
+       gap: 25px;
+    }
+    .services {
+       gap: 40px;
+       margin: 30px 4%;
+    }
+    .services-title h1 {
+       font-size: 36px;
+       padding: 0 10px;
+    }
+    .services-format {
+       padding: 25px;
+    }
+    .services-format h3 {
+       font-size: 22px;
+    }
+    .services-format h2 {
+       font-size: 26px;
+    }
+ }
+ 
+ /* Small mobile phones */
+ @media (max-width: 375px) {
+    .services-title h1 {
+       font-size: 30px;
+    }
+    .services-format {
+       padding: 20px;
+    }
+    .services-format h3 {
+       font-size: 20px;
+    }
+    .services-format h2 {
+       font-size: 24px;
+    }
+ }

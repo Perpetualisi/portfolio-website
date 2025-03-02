@@ -18,7 +18,7 @@ const Navbar = () => {
     menuRef.current.style.right="0"
   }
   const closeMenu =() =>{
-    menuRef.current.style.right="-350px"
+    menuRef.current.style.right="-450px"
   }
 
   // <img src={underline} />
@@ -38,6 +38,6 @@ const Navbar = () => {
       <div className='nav-connect'><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
     </div>
   )
-}
+} 
 
 export default Navbar

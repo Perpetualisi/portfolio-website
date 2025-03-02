@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 80px;
+    position: relative;
     margin: 80px 170px;
 }
 .about-title{
@@ -106,7 +107,7 @@
 @media(max-width:768px){
     .about{
       gap: 80px;  
-      margin: 20px 150px;
+      margin: 0px 40px;
       align-items: start;
     }
     .about-title h1{
